@@ -105,13 +105,13 @@ scheme["settings"] += [
             "foreground": orange,
         }
     },
-    # { # Operator
-    #     "name": "Operator",
-    #     "scope": "keyword.operator",
-    #     "settings": {
-    #         "foreground": transparency(purple, 65),
-    #     }
-    # },
+    {  # Operator
+        "name": "Operator",
+        "scope": "keyword.operator",
+        "settings": {
+            "foreground": blend(orange, red, 25),
+        }
+    },
     {  # Variable
         "name": "Variable",
         "scope": "variable",
@@ -128,7 +128,7 @@ scheme["settings"] += [
     },
     {  # Constant
         "name": "Constants",
-        "scope": "constant",
+        "scope": "constant, support.constant",
         "settings": {
             "foreground": shade(saturate(purple, 20), -30)
         }
@@ -172,7 +172,7 @@ scheme["settings"] += [
         "name": "Support class or type",
         "scope": "support.type, support.class",
         "settings": {
-            "foreground": blend(green, blue, 35)
+            "foreground": blend(green, blue)
         }
     },
     # {
@@ -297,7 +297,7 @@ scheme["settings"] += [
         "scope": "markup.changed",
         "name": "Git changed",
         "settings": {
-            "foreground": dark_green
+            "foreground": violet
         }
     },
     {  # Ignored

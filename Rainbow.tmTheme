@@ -100,6 +100,17 @@
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>Operator</string>
+			<key>scope</key>
+			<string>keyword.operator</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#F24719</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>Variable</string>
 			<key>scope</key>
 			<string>variable</string>
@@ -124,7 +135,7 @@
 			<key>name</key>
 			<string>Constants</string>
 			<key>scope</key>
-			<string>constant</string>
+			<string>constant, support.constant</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -183,7 +194,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#00A659</string>
+				<string>#008080</string>
 			</dict>
 		</dict>
 		<dict>
@@ -319,7 +330,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#009400</string>
+				<string>#AA80FF</string>
 			</dict>
 		</dict>
 		<dict>
