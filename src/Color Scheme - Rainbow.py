@@ -34,7 +34,7 @@ scheme = {
     "name": "Rainbow",
     "uuid": "0E945910-0FE8-47DF-8EFF-F63DDDB860C6",
     "settings": [
-        { # General
+        {  # General
             "name": "General",
             "settings": {
                 "background": background,
@@ -73,32 +73,32 @@ scheme = {
     ]
 }
 
-#-------------------------------------------------------------------------------
+#------------------------------------------------------------------------------
 # Python
-#-------------------------------------------------------------------------------
+#------------------------------------------------------------------------------
 scheme["settings"] += [
-    { # Comment
+    {  # Comment
         "name": "Comment",
         "scope": "comment, punctuation.definition.comment",
         "settings": {
             "foreground": grey(60),
         }
     },
-    { # Comment notes
+    {  # Comment notes
         "name": "Note Comment",
         "scope": "comment.line.note.notation",
         "settings": {
             "foreground": blend(red, grey(60), 60),
         }
     },
-    { # String
+    {  # String
         "name": "String",
         "scope": "string",
         "settings": {
             "foreground": dark_green,
         }
     },
-    { # Keywords
+    {  # Keywords
         "name": "Keyword",
         "scope": "keyword",
         "settings": {
@@ -112,21 +112,21 @@ scheme["settings"] += [
     #         "foreground": transparency(purple, 65),
     #     }
     # },
-    { # Variable
+    {  # Variable
         "name": "Variable",
         "scope": "variable",
         "settings": {
             "foreground": blend(dark_blue, grey(50))
         }
     },
-    { # Parameter
+    {  # Parameter
         "name": "Parameter",
         "scope": "variable.parameter",
         "settings": {
             "foreground": shade(blend(green, blue), 10)
         }
     },
-    { # Constant
+    {  # Constant
         "name": "Constants",
         "scope": "constant",
         "settings": {
@@ -140,35 +140,35 @@ scheme["settings"] += [
     #         "foreground": shade(purple, 20)
     #     }
     # },
-    { # Number
+    {  # Number
         "name": "Number",
         "scope": "constant.numeric",
         "settings": {
             "foreground": shade(blend(blue, dark_red, 70), 20)
         }
     },
-    { # Character Constant
+    {  # Character Constant
         "name": "Character constant",
         "scope": "constant.character",
         "settings": {
             "foreground": saturate(blend(purple, green, 10), 30)
         }
     },
-    { # Storage (class, def etc)
+    {  # Storage (class, def etc)
         "name": "Storage",
         "scope": "storage",
         "settings": {
             "foreground": dark_red,
         }
     },
-    { # Support: Function
+    {  # Support: Function
         "name": "Support function",
         "scope": "support.function",
         "settings": {
             "foreground": blend(light_blue, dark_blue)
         }
     },
-    { # Support: Class/Type
+    {  # Support: Class/Type
         "name": "Support class or type",
         "scope": "support.type, support.class",
         "settings": {
@@ -197,35 +197,35 @@ scheme["settings"] += [
     #         "fontStyle": ""
     #     }
     # },
-    { # Class name
+    {  # Class name
         "name": "Class name",
         "scope": "entity.name.class, entity.name.type.class",
         "settings": {
             "foreground": transparency(dark_blue, 80)
         }
     },
-    { # Class inherited from
+    {  # Class inherited from
         "name": "Inherited class",
         "scope": "entity.other.inherited-class",
         "settings": {
             "foreground": shade(yellow, -20)
         }
     },
-    { # Function name
+    {  # Function name
         "name": "Function name",
         "scope": "entity.name.function",
         "settings": {
             "foreground": blend(dark_blue, blue2, 80)
         }
     },
-    { # Decorator
+    {  # Decorator
         "name": "Decorator",
         "scope": "entity.name.function.decorator",
         "settings": {
             "foreground": blend(dark_red, green, 35)
         }
     },
-    { # Invalid
+    {  # Invalid
         "scope": "invalid",
         "name": "Invalid",
         "settings": {
@@ -234,7 +234,7 @@ scheme["settings"] += [
             "background": blend(red, background)
         }
     },
-    { # Deprecated
+    {  # Deprecated
         "scope": "invalid.deprecated",
         "name": "Deprecated stuff",
         "settings": {
@@ -243,11 +243,11 @@ scheme["settings"] += [
     }
 ]
 
-#-------------------------------------------------------------------------------
+#------------------------------------------------------------------------------
 # General
-#-------------------------------------------------------------------------------
+#------------------------------------------------------------------------------
 scheme["settings"] += [
-    { # Entity name
+    {  # Entity name
         "name": "Entity name",
         "scope": "entity.name",
         "settings": {
@@ -256,18 +256,18 @@ scheme["settings"] += [
     },
 ]
 
-#-------------------------------------------------------------------------------
+#------------------------------------------------------------------------------
 # HTML/XML
-#-------------------------------------------------------------------------------
+#------------------------------------------------------------------------------
 scheme["settings"] += [
-    { # Tag attribute name
+    {  # Tag attribute name
         "name": "Tags",
         "scope": "entity.other.attribute-name",
         "settings": {
             "foreground": orange
         }
     },
-    { # Tag name
+    {  # Tag name
         "name": "Tags",
         "scope": "entity.name.tag",
         "settings": {
@@ -275,53 +275,53 @@ scheme["settings"] += [
         }
     }
 ]
-#-------------------------------------------------------------------------------
+#------------------------------------------------------------------------------
 # Git Gutter/Diff
-#-------------------------------------------------------------------------------
+#------------------------------------------------------------------------------
 scheme["settings"] += [
-    { # Deleted
+    {  # Deleted
         "scope": "markup.deleted",
         "name": "Git deleted",
         "settings": {
             "foreground": dark_red
         }
     },
-    { # Insterted
+    {  # Inserted
         "scope": "markup.inserted",
         "name": "Git inserted",
         "settings": {
             "foreground": dark_green
         }
     },
-    { # Changed
+    {  # Changed
         "scope": "markup.changed",
         "name": "Git changed",
         "settings": {
             "foreground": dark_green
         }
     },
-    { # Ignored
+    {  # Ignored
         "scope": "markup.ignored",
         "name": "Git ignored",
         "settings": {
             "foreground": grey(50)
         }
     },
-    { # Untracked
+    {  # Untracked
         "scope": "markup.untracked",
         "name": "Git untracked",
         "settings": {
             "foreground": grey(50)
         }
     },
-    { # Diff: Context lines
+    {  # Diff: Context lines
         "scope": "source.diff",
         "name": "Git Diff",
         "settings": {
             "foreground": grey(30)
         }
     },
-    { # Diff: Headers
+    {  # Diff: Headers
         "scope": "meta.diff.header",
         "name": "Git diff file header",
         "settings": {
@@ -330,9 +330,9 @@ scheme["settings"] += [
     }
 ]
 
-#-------------------------------------------------------------------------------
+#------------------------------------------------------------------------------
 # Pylinter
-#-------------------------------------------------------------------------------
+#------------------------------------------------------------------------------
 scheme["settings"] += [
     # All things are trasparent slightly. But they have their own colors. So,
     # using white as the Foreground mean all the colors as they are by default.
@@ -344,32 +344,32 @@ scheme["settings"] += [
     }
 ]
 
-#-------------------------------------------------------------------------------
+#------------------------------------------------------------------------------
 # Markdown
-#-------------------------------------------------------------------------------
+#------------------------------------------------------------------------------
 scheme["settings"] += [
-    { # Inline Raw
+    {  # Inline Raw
         "name": "Markup: raw inline",
         "scope": "text.html.markdown markup.raw.inline",
         "settings": {
             "foreground": blend(violet, foreground)
         }
     },
-    { # Linebreak
+    {  # Linebreak
         "name": "Markdown: linebreak",
         "scope": "text.html.markdown meta.dummy.line-break",
         "settings": {
             "background": transparency(violet, 80)
         }
     },
-    { # Heading
+    {  # Heading
         "name": "Markdown: heading",
         "scope": "markdown.heading, markup.heading | markup.heading entity.name, markup.heading.markdown punctuation.definition.heading.markdown",
         "settings": {
             "foreground": orange
         }
     },
-    { # Italic
+    {  # Italic
         "name": "Markup: italic",
         "scope": "markup.italic",
         "settings": {
@@ -377,7 +377,7 @@ scheme["settings"] += [
             "foreground": dark_red
         }
     },
-    { # Bold
+    {  # Bold
         "name": "Markup: bold",
         "scope": "markup.bold",
         "settings": {
@@ -385,7 +385,7 @@ scheme["settings"] += [
             "foreground": blend(dark_red, foreground, 30)
         }
     },
-    { # Underline
+    {  # Underline
         "name": "Markup: underline",
         "scope": "markup.underline",
         "settings": {
@@ -393,21 +393,21 @@ scheme["settings"] += [
             "foreground": blend(dark_red, foreground, 15)
         }
     },
-    { # Blockquote
+    {  # Blockquote
         "name": "Markdown: Blockquote",
         "scope": "markup.quote, punctuation.definition.blockquote.markdown",
         "settings": {
             "foreground": blue
         }
     },
-    { # Quote
+    {  # Quote
         "name": "Markup: Quote",
         "scope": "markup.quote",
         "settings": {
             "foreground": blend(blue, foreground)
         }
     },
-    { # Links
+    {  # Links
         "name": "Markdown: Link",
         "scope": "string.other.link.title.markdown",
         "settings": {
@@ -415,28 +415,28 @@ scheme["settings"] += [
             "foreground": blend(green, foreground)
         }
     },
-    { # Block Raw
+    {  # Block Raw
         "name": "Markup: Raw block",
         "scope": "markup.raw.block",
         "settings": {
             "foreground": blend(violet, foreground)
         }
     },
-    { # List items
+    {  # List items
         "name": "Markdown: List Items Punctuation",
         "scope": "punctuation.definition.list_item.markdown",
         "settings": {
             # "foreground": "#ffffff"
         }
     },
-    { # Fenced Block Raw
+    {  # Fenced Block Raw
         "name": "Markdown: Raw Block fenced",
         "scope": "markup.raw.block.fenced.markdown",
         "settings": {
             "background": blend(black, background, 97)
         }
     },
-    { # Fenced Code Block
+    {  # Fenced Code Block
         "name": "Markdown: Fenced Code Block",
         "scope": "punctuation.definition.fenced.markdown, variable.language.fenced.markdown",
         "settings": {
@@ -445,7 +445,7 @@ scheme["settings"] += [
             # "foreground": "#636050"
         }
     },
-    { # Fenced Language
+    {  # Fenced Language
         "name": "Markdown: Fenced Language",
         "scope": "variable.language.fenced.markdown",
         "settings": {
@@ -453,7 +453,7 @@ scheme["settings"] += [
             "foreground": violet
         }
     },
-    { # Markdown Seperator
+    {  # Markdown Seperator
         "name": "Markdown: Separator",
         "scope": "meta.separator",
         "settings": {
@@ -463,11 +463,11 @@ scheme["settings"] += [
     },
 ]
 
-#-------------------------------------------------------------------------------
+#------------------------------------------------------------------------------
 # Bracket Highlighter
-#-------------------------------------------------------------------------------
+#------------------------------------------------------------------------------
 scheme["settings"] += [
-    { # Default (Used when the bracket does not have it's own scope)
+    {  # Default (Used when the bracket does not have it's own scope)
         "name": "BracketHighlighter: Default",
         "scope": "bracket.default",
         "settings": {
@@ -475,7 +475,7 @@ scheme["settings"] += [
             "foreground": transparency(orange, 70)
         }
     },
-    { # String Quotes
+    {  # String Quotes
         "name": "BracketHighlighter: Strings",
         "scope": "bracket.string",
         "settings": {
@@ -483,7 +483,7 @@ scheme["settings"] += [
             "foreground": transparency(dark_green, 80)
         }
     },
-    { # Curly
+    {  # Curly
         "name": "BracketHighlighter: Curly",
         "scope": "bracket.curly",
         "settings": {
@@ -491,7 +491,7 @@ scheme["settings"] += [
             "foreground": transparency(orange, 70)
         }
     },
-    { # Square
+    {  # Square
         "name": "BracketHighlighter: Square",
         "scope": "bracket.square",
         "settings": {
@@ -499,7 +499,7 @@ scheme["settings"] += [
             "foreground": transparency(blue, 60)
         }
     },
-    { # Round
+    {  # Round
         "name": "BracketHighlighter: Round",
         "scope": "bracket.round",
         "settings": {
@@ -507,7 +507,7 @@ scheme["settings"] += [
             "foreground": blend(foreground, violet, 75)
         }
     },
-    { # Angle
+    {  # Angle
         "name": "BracketHighlighter: Angle",
         "scope": "bracket.angle",
         "settings": {
@@ -515,7 +515,7 @@ scheme["settings"] += [
             "foreground": transparency(red, 50)
         }
     },
-    { # Tags
+    {  # Tags
         "name": "BracketHighlighter: Tags",
         "scope": "bracket.tag",
         "settings": {
@@ -525,8 +525,8 @@ scheme["settings"] += [
     }
 ]
 
-#-------------------------------------------------------------------------------
+#------------------------------------------------------------------------------
 # Building the scheme
-#-------------------------------------------------------------------------------
+#------------------------------------------------------------------------------
 if __name__ == '__main__':
     builder.generate_color_scheme("Rainbow", scheme)
