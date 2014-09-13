@@ -26,7 +26,7 @@ light_blue = "#66CCFF"
 dark_blue = "#000066"
 dark_green = "#009400"
 
-background = blend(grey(95), blue, 3)
+background = blend(grey(95), blue, 4)
 # foreground = grey(15)
 foreground = blend(grey(15), blue, 10)
 

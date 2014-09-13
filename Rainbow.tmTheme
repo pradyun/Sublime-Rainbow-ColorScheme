@@ -14,7 +14,7 @@
 				<key>activeGuide</key>
 				<string>#A6A6A6</string>
 				<key>background</key>
-				<string>#EBEBF2</string>
+				<string>#E8E8F3</string>
 				<key>bracketsForeground</key>
 				<string>#999999</string>
 				<key>bracketsOptions</key>
@@ -22,9 +22,9 @@
 				<key>caret</key>
 				<string>#262626</string>
 				<key>findHighlight</key>
-				<string>#F5DC79</string>
+				<string>#F3DA7A</string>
 				<key>findHighlightBorder</key>
-				<string>#B3B3B3</string>
+				<string>#B2B2B2</string>
 				<key>findHighlightForeground</key>
 				<string>#000000</string>
 				<key>foreground</key>
@@ -38,9 +38,9 @@
 				<key>lineHighlight</key>
 				<string>#22223C08</string>
 				<key>selection</key>
-				<string>#E1E1E9</string>
+				<string>#DEDEEA</string>
 				<key>selectionBorder</key>
-				<string>#B3B3B3</string>
+				<string>#B2B2B2</string>
 			</dict>
 		</dict>
 		<dict>
@@ -51,7 +51,7 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#ECE4EB</string>
+				<string>#E9E1EC</string>
 			</dict>
 		</dict>
 		<dict>
@@ -150,7 +150,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#D64FD6</string>
+				<string>#D64ED6</string>
 			</dict>
 		</dict>
 		<dict>
@@ -172,7 +172,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#3366B3</string>
+				<string>#3366B2</string>
 			</dict>
 		</dict>
 		<dict>
@@ -238,7 +238,7 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#F57679</string>
+				<string>#F3747A</string>
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
@@ -352,7 +352,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#4D4D4D</string>
+				<string>#4C4C4C</string>
 			</dict>
 		</dict>
 		<dict>
@@ -479,7 +479,7 @@
 				<key>fontStyle</key>
 				<string>underline</string>
 				<key>foreground</key>
-				<string>#11911E</string>
+				<string>#11901E</string>
 			</dict>
 		</dict>
 		<dict>
@@ -499,8 +499,7 @@
 			<key>scope</key>
 			<string>punctuation.definition.list_item.markdown</string>
 			<key>settings</key>
-			<dict>
-			</dict>
+			<dict/>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -510,7 +509,7 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#E4E4EB</string>
+				<string>#E1E1EC</string>
 			</dict>
 		</dict>
 		<dict>
@@ -521,7 +520,7 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#E4E4EB</string>
+				<string>#E1E1EC</string>
 				<key>foreground</key>
 				<string>#0000FF</string>
 			</dict>
@@ -562,7 +561,7 @@
 				<key>fontStyle</key>
 				<string>underline</string>
 				<key>foreground</key>
-				<string>#ED5F21b3</string>
+				<string>#ED5F21b2</string>
 			</dict>
 		</dict>
 		<dict>
@@ -588,7 +587,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#ED5F21b3</string>
+				<string>#ED5F21b2</string>
 			</dict>
 		</dict>
 		<dict>
@@ -614,7 +613,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#8869CE</string>
+				<string>#8868CE</string>
 			</dict>
 		</dict>
 		<dict>
