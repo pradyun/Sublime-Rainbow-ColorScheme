@@ -183,14 +183,6 @@ scheme["settings"] += [
     #     }
     # },
     # {
-    #     "name": "Support constant",
-    #     "scope": "support.constant",
-    #     "settings": {
-    #         "foreground": "#66D9EF",
-    #         "fontStyle": ""
-    #     }
-    # },
-    # {
     #     "name": "Support variable",
     #     "scope": "support.other.variable",
     #     "settings": {
@@ -364,7 +356,10 @@ scheme["settings"] += [
     },
     {  # Heading
         "name": "Markdown: heading",
-        "scope": "markdown.heading, markup.heading | markup.heading entity.name, markup.heading.markdown punctuation.definition.heading.markdown",
+        "scope": (
+            "markdown.heading, markup.heading | markup.heading entity.name, "
+            "markup.heading.markdown punctuation.definition.heading.markdown"
+        ),
         "settings": {
             "foreground": orange
         }
