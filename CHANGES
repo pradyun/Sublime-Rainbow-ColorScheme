@@ -1,0 +1,10 @@
+CHANGELOG
+---------
+
+0.2.0
+  - Added support for Anaconda.
+  - Minor commenting cleanups.
+
+0.1.0
+  - Initial Release, with support for Git Diff, Git Gutter, ExtendedMarkdown,
+    BracketHighlighter, HTML and Pylinter.
