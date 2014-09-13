@@ -653,6 +653,50 @@
 				<string>#CC3333</string>
 			</dict>
 		</dict>
+		<dict>
+			<key>name</key>
+			<string>Anaconda: Illegal</string>
+			<key>scope</key>
+			<string>anaconda.outline.illegal</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#CC3333</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Anaconda: Violations</string>
+			<key>scope</key>
+			<string>anaconda.outline.violation</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ED5F21</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Anaconda: Warning</string>
+			<key>scope</key>
+			<string>anaconda.outline.warning</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#FFCC00</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Anaconda: Generic</string>
+			<key>scope</key>
+			<string>anaconda.outline</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#FFFFFF</string>
+			</dict>
+		</dict>
 	</array>
 	<key>uuid</key>
 	<string>0E945910-0FE8-47DF-8EFF-F63DDDB860C6</string>

@@ -521,6 +521,41 @@ scheme["settings"] += [
 ]
 
 #------------------------------------------------------------------------------
+# Anaconda
+#------------------------------------------------------------------------------
+scheme["settings"] += [
+    # These enhance the default colors.
+    {  # Illegal
+        "name": "Anaconda: Illegal",
+        "scope": "anaconda.outline.illegal",
+        "settings": {
+            "foreground": dark_red
+        }
+    },
+    {  # Violation
+        "name": "Anaconda: Violations",
+        "scope": "anaconda.outline.violation",
+        "settings": {
+            "foreground": orange
+        }
+    },
+    {  # Warning
+        "name": "Anaconda: Warning",
+        "scope": "anaconda.outline.warning",
+        "settings": {
+            "foreground": yellow
+        }
+    },
+    {  # Generic, just in case anaconda comes up with something new!
+        "name": "Anaconda: Generic",
+        "scope": "anaconda.outline",
+        "settings": {
+            "foreground": white
+        }
+    },
+]
+
+#------------------------------------------------------------------------------
 # Building the scheme
 #------------------------------------------------------------------------------
 if __name__ == '__main__':
