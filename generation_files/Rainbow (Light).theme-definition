@@ -1,0 +1,237 @@
+///////////////////////////////////////////////////////////////////////////////
+// Global
+///////////////////////////////////////////////////////////////////////////////
+GLOBAL {
+    activeGuide: #A6A6A6;
+    background: #E8E8F8;
+    bracketsForeground: #999999;
+    bracketsOptions: 'underline';
+    caret: #262626;
+    findHighlight: #F0E080;
+    findHighlightBorder: #B2B2B2;
+    findHighlightForeground: #000000;
+    foreground: #222240;
+    guide: #CCCCCC;
+    gutter: #2222401a;
+    invisibles: #222240;
+    lineHighlight: #22224008;
+    selection: #DEDEEA;
+    selectionBorder: #B2B2B2;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Basic Components
+///////////////////////////////////////////////////////////////////////////////
+// Comment
+comment, punctuation.definition.comment {
+    foreground: #999999;
+}
+// String
+string {
+    foreground: #009000;
+}
+// Keyword
+keyword {
+    foreground: #EE8000;
+}
+// Variable
+variable {
+    foreground: #404073;
+}
+// Parameter
+variable.parameter {
+    foreground: #009A9A;
+}
+// Constants
+constant, support.constant {
+    foreground: #A238A2;
+}
+// Number
+constant.numeric {
+    foreground: #C23198;
+}
+// Character constant
+constant.character {
+    foreground: #D64ED6;
+}
+// Storage
+storage {
+    foreground: #CC3333;
+}
+// Class name
+entity.name.class, entity.name.type.class {
+    foreground: #000066;
+}
+// Function name
+entity.name.function {
+    foreground: #0062B0;
+}
+// Decorator
+entity.name.function.decorator {
+    foreground: #857A21;
+}
+// Support function
+support.function {
+    foreground: #3366B2;
+}
+// Invalid
+invalid {
+    background: #F3747A80;
+    fontStyle: '';
+    foreground: #BD0A12;
+}
+// Deprecated stuff
+invalid.deprecated {
+    background: #F82820;
+}
+// Inherited class
+entity.other.inherited-class {
+    foreground: #CCA300;
+}
+// Entity name
+entity.name {
+    foreground: #0062B0;
+}
+// Tags
+entity.name.tag {
+    foreground: #CC3333;
+}
+// Tag attributes
+entity.other.attribute-name {
+    foreground: #ED5F21;
+}
+// Support class or type
+support.type, support.class {
+    foreground: #008080;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Git
+///////////////////////////////////////////////////////////////////////////////
+// Git deleted
+markup.deleted {
+    foreground: #CC3333;
+}
+// Git inserted
+markup.inserted {
+    foreground: #009400;
+}
+// Git changed
+markup.changed {
+    foreground: #AA80FF;
+}
+// Git ignored
+markup.ignored {
+    foreground: #808080;
+}
+// Git untracked
+markup.untracked {
+    foreground: #808080;
+}
+// Git Diff
+source.diff {
+    foreground: #4C4C4C;
+}
+// Git diff file header
+meta.diff.header {
+    foreground: #000000;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Pylinter
+///////////////////////////////////////////////////////////////////////////////
+pylinter {
+    foreground: #FFFFFF;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Markup and Markdown
+///////////////////////////////////////////////////////////////////////////////
+// Markup: raw inline
+text.html.markdown markup.raw.inline {
+    foreground: #66519E;
+}
+// Markdown: linebreak
+text.html.markdown meta.dummy.line-break {
+    background: #AA80FFcc;
+}
+// Markdown: heading
+markdown.heading, markup.heading, markup.heading entity.name, markup.heading.markdown punctuation.definition.heading.markdown {
+    foreground: #ED5F21;
+}
+// Markup: italic
+markup.italic {
+    fontStyle: 'italic';
+    foreground: #CC3333;
+}
+// Markup: bold
+markup.bold {
+    fontStyle: 'bold';
+    foreground: #992E36;
+}
+// Markup: underline
+markup.underline {
+    fontStyle: 'underline';
+    foreground: #B33034;
+}
+// Markdown: Blockquote
+markup.quote, punctuation.definition.blockquote.markdown {
+    foreground: #0000FF;
+}
+// Markup: Quote
+markup.quote {
+    foreground: #11119E;
+}
+// Markdown: Link
+string.other.link.title.markdown {
+    fontStyle: 'underline';
+    foreground: #11901E;
+}
+// Markup: Raw block
+markup.raw.block {
+    foreground: #66519E;
+}
+// Markdown: List Items Punctuation
+punctuation.definition.list_item.markdown {
+    foreground: #C04040;
+}
+// Markdown: Raw Block fenced
+markup.raw.block.fenced.markdown {
+    background: #E2E2EE;
+}
+// Markdown: Fenced Code Block
+punctuation.definition.fenced.markdown, variable.language.fenced.markdown {
+    background: #E2E2EE;
+    foreground: #0000FF;
+}
+// Markdown: Fenced Language
+variable.language.fenced.markdown {
+    fontStyle: '';
+    foreground: #AA80FF;
+}
+// Markdown: Separator
+meta.separator {
+    background: #22223C0d;
+    fontStyle: 'bold';
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Anaconda
+///////////////////////////////////////////////////////////////////////////////
+// Anaconda: Illegal
+anaconda.outline.illegal {
+    foreground: #CC3333;
+}
+// Anaconda: Violations
+anaconda.outline.violation {
+    foreground: #ED5F21;
+}
+// Anaconda: Warning
+anaconda.outline.warning {
+    foreground: #FFCC00;
+}
+//  Just in case something new comes up...
+// Anaconda: Generic
+anaconda.outline {
+    foreground: #FFFFFF;
+}
