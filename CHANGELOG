@@ -1,0 +1,18 @@
+CHANGELOG
+---------
+
+0.3.0
+  - Move to CSS like syntax for theming.
+  - Remove Support: BracketHighlighter
+
+0.2.0
+  - Minor cleanups.
+  - Add Support: Anaconda.
+
+0.1.0
+  - Initial Release.
+  - Add Support: Git Diff
+  - Add Support: Git Gutter
+  - Add Support: ExtendedMarkdown
+  - Add Support: Pylinter
+  - Add Support: BracketHighlighter (Semi-tested)
