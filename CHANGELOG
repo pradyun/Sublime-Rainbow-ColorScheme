@@ -2,15 +2,19 @@ CHANGELOG
 ---------
 
 0.3.0
-  - Move to CSS like syntax for theming.
-  - Remove Support: BracketHighlighter
+  * Move to CSS like syntax for theming.
+
+  - Add Support: Block Cursor Everywhere
+  - Add Support: Task Records
+
+  - Remove BracketHighlighter support.
 
 0.2.0
-  - Minor cleanups.
+  * Minor cleanups.
   - Add Support: Anaconda.
 
 0.1.0
-  - Initial Release.
+  * Initial Release.
   - Add Support: Git Diff
   - Add Support: Git Gutter
   - Add Support: ExtendedMarkdown

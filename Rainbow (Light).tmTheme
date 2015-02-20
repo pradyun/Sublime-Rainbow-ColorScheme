@@ -549,6 +549,15 @@
 		</dict>
 		<dict>
 			<key>scope</key>
+			<string>block_cursor</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#80808080</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
 			<string>meta.task.date-tag</string>
 			<key>settings</key>
 			<dict>

@@ -58,7 +58,7 @@ def generate_color_scheme_from_file(file_name):
     with open(file_name) as in_file:
         text = in_file.read()
 
-    print("Generating {!r:<17}... ".format(color_scheme.name), end="")
+    print("Generating {!r:<17}".format(color_scheme.name))
 
     # Parse it.
     parser = Parser()
@@ -73,6 +73,7 @@ def generate_color_scheme_from_file(file_name):
     with open(uuid_file_name, "w") as uuid_file:
         uuid_file.write(color_scheme.uuid)
 
+    print("Writeing to: {!r}".format(out_file_name))
     # Write ColorScheme
     with open(out_file_name, "w") as f:
         f.write(color_scheme.as_plist())
@@ -244,3 +245,4 @@ class Parser(object):
 
 if __name__ == '__main__':
     generate_color_scheme_from_file("Rainbow (Light).theme-definition")
+    generate_color_scheme_from_file("Rainbow (Dark).theme-definition")

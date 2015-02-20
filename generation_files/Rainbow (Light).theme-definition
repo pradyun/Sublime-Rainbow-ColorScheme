@@ -235,3 +235,63 @@ anaconda.outline.warning {
 anaconda.outline {
     foreground: #FFFFFF;
 }
+
+///////////////////////////////////////////////////////////////////////////////
+// Block Cursor Everywhere
+///////////////////////////////////////////////////////////////////////////////
+block_cursor {
+    background: #80808080;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Task Records
+///////////////////////////////////////////////////////////////////////////////
+meta.task.date-tag {
+    foreground: #00801080;
+}
+// Completed Task
+meta.task.completed {
+    foreground: #008010;
+    background: #00FF0005;
+}
+// // Completed bullet
+// punctuation.definition.bullet.completed {
+//     foreground: #209020;
+// }
+
+// Postponed Task
+meta.task.postponed {
+    foreground: #A0A010;
+    background: #FFFF0010;
+}
+// // Postponed bullet
+// punctuation.definition.bullet.postponed {
+//     foreground: #909020;
+// }
+
+// Cancelled Task
+meta.task.cancelled {
+    foreground: #A01010D0;
+    background: #FF000007;
+}
+// // Cancelled bullet
+// punctuation.definition.bullet.cancelled {
+//     foreground: #902020;
+// }
+
+// Uncategorized Task
+meta.task.uncategorized {
+    foreground: #101010D0;
+    background: #00000010;
+}
+// // Uncategorized bullet
+// punctuation.definition.bullet.uncategorized {
+//     foreground: #202090;
+// }
+
+// Task notes
+meta.task.notes {
+    background: #222240;
+    foreground: #E8E8F8;
+}
