@@ -32,7 +32,7 @@ string {
 }
 // Keyword
 keyword {
-    foreground: #EE8000;
+    foreground: #EE7700;
 }
 // Variable
 variable {
