@@ -1,7 +1,10 @@
 # Rainbow Color Scheme
 
-A simple bright light-background color scheme for Sublime Text. Designed for use with [Soda Light](https://github.com/buymeasoda/soda-theme).
+A simple bright color scheme for Sublime Text. Made for the beautiful [Soda](https://github.com/buymeasoda/soda-theme) theme.
 
-> Dark version coming soon!
+## Screenshots
+### Rainbow (Light).tmTheme
+![Light Color Scheme](Rainbow-Light.png)
 
-![Screenshot](src/Rainbow.png)
+### Rainbow (Dark).tmTheme
+Coming soon!
