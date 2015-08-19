@@ -1,0 +1,85 @@
+-
+    name: global-properties
+    input:
+        name: Name
+        author: Author
+        uuid: my-custom-uuid
+        text: |
+            GLOBAL {
+                text-property: 'some awesome text';
+                color-property: #FFFFFF;
+            }
+    output:
+        name: Name
+        author: Author
+        uuid: my-custom-uuid
+        settings:
+          -
+            settings:
+                text-property: 'some awesome text'
+                color-property: '#FFFFFF'
+-
+    name: simple-scoped-properties
+    input:
+        name: Name
+        author: Author
+        uuid: my-custom-uuid
+        text: |
+            my_scope {
+                text-property: 'some awesome text';
+                color-property: #FFFFFF;
+            }
+    output:
+        name: Name
+        author: Author
+        uuid: my-custom-uuid
+        settings:
+          -
+            scope: my_scope
+            settings:
+                text-property: 'some awesome text'
+                color-property: '#FFFFFF'
+-
+    name: dotted-scoped-properties
+    input:
+        name: Name
+        author: Author
+        uuid: my-custom-uuid
+        text: |
+            my.dotted.scope {
+                text-property: 'some awesome text';
+                color-property: #FFFFFF;
+            }
+    output:
+        name: Name
+        author: Author
+        uuid: my-custom-uuid
+        settings:
+          -
+            scope: my.dotted.scope
+            settings:
+                text-property: 'some awesome text'
+                color-property: '#FFFFFF'
+-
+    name: variable-support
+    input:
+        name: Name
+        author: Author
+        uuid: my-custom-uuid
+        text: |
+            @my-awesome-text: 'some awesome text';
+            @my-awesome-color: #FFFFFF;
+            my.dotted.scope {
+                text-property: 'some awesome text';
+                color-property: #FFFFFF;
+            }
+    output:
+        name: Name
+        author: Author
+        uuid: my-custom-uuid
+        settings:
+          -
+            scope: my.dotted.scope
+            settings:
+                text-property: 'some awesome text'
+                color-property: '#FFFFFF'
