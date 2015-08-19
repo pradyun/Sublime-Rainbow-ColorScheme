@@ -1,5 +1,9 @@
 #!/usr/bin/python3
 """Generates the color scheme from a CSS-like definition of the color schemes.
+
+**NOTE**
+This module is meant only for Python versions >= 3.4, as it uses features added
+to the standard library in Python 3.4.
 """
 
 import os
@@ -10,7 +14,6 @@ import uuid as uuid_
 
 from collections import namedtuple
 
-# Makes non-sublime!
 import ply.lex
 import ply.yacc
 
