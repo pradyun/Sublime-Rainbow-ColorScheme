@@ -9,7 +9,6 @@ import plistlib
 import uuid as uuid_
 
 from collections import namedtuple
-from os.path import join, splitext, basename, expanduser
 
 # Makes non-sublime!
 import ply.lex
@@ -21,7 +20,7 @@ PACKAGE_NAME = "Color Scheme - Rainbow"
 GLOBAL_SCOPE = "GLOBAL"
 DEBUG = False
 
-# -- A nice wrapper classes ---------------------------------------------------
+# -- Classes ------------------------------------------------------------------
 Rule = namedtuple("Rule", "name value")
 Declaration = namedtuple("Declaration", "scopes rules")
 
@@ -223,7 +222,7 @@ def _get_packages_path():
         ret = "~/.config/sublime-text-3"
     else:
         raise Exception("Unknown OS!")
-    return join(expanduser(ret), "Packages")
+    return os.path.join(os.path.expanduser(ret), "Packages")
 
 
 def generate_color_scheme_from_files(name, *files):
@@ -231,6 +230,7 @@ def generate_color_scheme_from_files(name, *files):
     """
     uuid = None
     text_parts = []
+
     for file_name in files:
         file_name = os.path.join("..", "generation_files", file_name)
 
@@ -258,7 +258,7 @@ def generate_color_scheme_from_files(name, *files):
     with open(uuid_file_name, "w") as uuid_file:
         uuid_file.write(uuid)
 
-    out_file_name = join(
+    out_file_name = os.path.join(
         _get_packages_path(), PACKAGE_NAME, (name + ".tmTheme")
     )
     if DEBUG:
@@ -277,13 +277,11 @@ def generate_color_scheme(name, text, uuid, author):
     """
     color_scheme = ColorScheme(name, uuid, author)
 
-    # Parse it.
     parser = Parser()
     declarations = parser.parse(text)
-    # Add declarations to ColorScheme
+
     for declaration in declarations:
         color_scheme.add(declaration)
-    # Finalize ColorScheme
     color_scheme.finalize()
 
     return color_scheme.as_dict()
