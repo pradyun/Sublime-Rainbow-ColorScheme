@@ -119,6 +119,18 @@ class Parser(object):
         )
 
     # -- PLY Parser -----------------------------------------------------------
+    def _zero_or_more(self, p, next_token=2):
+        if len(p) == 2:
+            p[0] = []
+        else:
+            p[0] = p[1] + [p[next_token]]
+
+    def _one_or_more(self, p, next_token=2):
+        if len(p) == 2:
+            p[0] = [p[1]]
+        else:
+            p[0] = p[1] + [p[next_token]]
+
     def p_error(self, t):
         raise Exception(
             "Could not parse on line {0.lexer.lineno}: {0!r}".format(t)
@@ -135,50 +147,45 @@ class Parser(object):
         """zero_or_more_declaration : zero_or_more_declaration declaration
                                     | empty
         """
-        p[0] = p[1] or []
-        if len(p) > 2 and p[2] is not None:
-            p[0].append(p[2])
-
-    def p_declaration(self, p):
-        """declaration : one_or_more_scope_names '{' zero_or_more_rules '}'
-                       | variable_declaration
-        """
-        if len(p) == 2:
-            p[0] = None
-        else:
-            p[0] = Declaration(p[1], p[3])
+        self._zero_or_more(p)
+        # We don't want a None to get into our declarations
+        if len(p) > 2 and p[2] is None:
+            p[0].pop()
 
     def p_variable_declaration(self, p):
-        """variable_declaration : VARIABLE ':' value ';'
+        """declaration : VARIABLE ':' value ';'
         """
         self.variables[p[1]] = p[3]
+
+        p[0] = None
+
+    def p_rule_declaration(self, p):
+        """declaration : one_or_more_scope_names '{' declaration_body '}'
+        """
+        p[0] = Declaration(p[1], p[3])
 
     def p_one_or_more_scope_names(self, p):
         """one_or_more_scope_names : one_or_more_scope_names ',' scope_name
                                    | scope_name
         """
-        if len(p) == 2:
-            p[0] = [p[1]]
-        else:
-            p[0] = p[1] + [p[3]]
+        self._one_or_more(p, 3)
 
     def p_scope_name(self, p):
         """scope_name : scope_name NAME
                       | NAME
         """
-        if len(p) == 2:
-            p[0] = [p[1]]
-        else:
-            p[0] = p[1] + [p[2]]
+        self._one_or_more(p, 2)
+
+    def p_declaration_body(self, p):
+        """declaration_body : zero_or_more_rules
+        """
+        p[0] = p[1]
 
     def p_zero_or_more_rule(self, p):
         """zero_or_more_rules : zero_or_more_rules rule
                               | empty
         """
-        if len(p) == 2:
-            p[0] = []
-        else:
-            p[0] = p[1] + [p[2]]
+        self._zero_or_more(p)
 
     def p_rule(self, p):
         """rule : NAME ':' value_or_variable ';'
