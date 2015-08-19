@@ -226,13 +226,13 @@ def _get_packages_path():
     return join(expanduser(ret), "Packages")
 
 
-def generate_color_scheme_from_file(*files):
+def generate_color_scheme_from_files(name, *files):
     """Generate a color-scheme from a given file.
     """
     uuid = None
     text_parts = []
     for file_name in files:
-        name = splitext(basename(file_name))[0]
+        file_name = os.path.join("..", "generation_files", file_name)
 
         uuid_file_name = file_name + ".uuid"
 
@@ -288,6 +288,12 @@ def generate_color_scheme(name, text, uuid, author):
 
     return color_scheme.as_dict()
 
-# if __name__ == '__main__':
-#     generate_color_scheme_from_file("Rainbow (Light).theme-definition")
-#     generate_color_scheme_from_file("Rainbow (Dark).theme-definition")
+if __name__ == '__main__':
+    generate_color_scheme_from_files(
+        "Rainbow (Light)",
+        "common.theme-definition", "light.theme-definition"
+    )
+    generate_color_scheme_from_files(
+        "Rainbow (Dark)",
+        "common.theme-definition", "dark.theme-definition"
+    )
