@@ -112,15 +112,17 @@ class Parser(object):
         return t
 
     def t_error(self, t):
-        print("TOKEN-ERROR: Could not generate valid token on line", end=" ")
-        print(t.lexer.lineno)
-        raise Exception("Unable to generate token, from: " + repr(t.value))
+        raise Exception(
+            "Could not generate valid token on line {}: {!r}".format(
+                t.lexer.lineno, t.value
+            )
+        )
 
     # -- PLY Parser -----------------------------------------------------------
     def p_error(self, t):
-        print("PARSER-ERROR: Could not parse on line", end=" ")
-        print(t.lexer.lineno)
-        raise Exception("Unable to parse: " + repr(t))
+        raise Exception(
+            "Could not parse on line {0.lexer.lineno}: {0!r}".format(t)
+        )
 
     def p_empty(self, p):
         "empty : "
