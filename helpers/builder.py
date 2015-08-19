@@ -289,12 +289,6 @@ def generate_color_scheme(name, text, uuid, author):
 
     return color_scheme.as_dict()
 
+
 if __name__ == '__main__':
-    generate_color_scheme_from_files(
-        "Rainbow (Light)",
-        "common.theme-definition", "light.theme-definition"
-    )
-    generate_color_scheme_from_files(
-        "Rainbow (Dark)",
-        "common.theme-definition", "dark.theme-definition"
-    )
+    pass
