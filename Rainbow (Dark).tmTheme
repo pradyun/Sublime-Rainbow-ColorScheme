@@ -3,16 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>name</key>
-	<string>Rainbow (Light)</string>
+	<string>Rainbow (Dark)</string>
 	<key>settings</key>
 	<array>
 		<dict>
 			<key>settings</key>
 			<dict>
 				<key>activeGuide</key>
-				<string>#d5d5d8</string>
+				<string>#383838</string>
 				<key>background</key>
-				<string>#f0f0fa</string>
+				<string>#1e1e1e</string>
 				<key>bracketContentsForeground</key>
 				<string>#797979</string>
 				<key>bracketContentsOptions</key>
@@ -22,29 +22,29 @@
 				<key>bracketsOptions</key>
 				<string>underline</string>
 				<key>caret</key>
-				<string>#383838</string>
+				<string>#d5d5d8</string>
 				<key>foreground</key>
 				<string>#797979</string>
 				<key>guide</key>
-				<string>#e2e2e9</string>
+				<string>#2b2b2b</string>
 				<key>gutter</key>
-				<string>#e4e4ed</string>
+				<string>#272727</string>
 				<key>gutterForeground</key>
-				<string>#a1a1a3</string>
+				<string>#6d6d6d</string>
 				<key>inactiveSelection</key>
-				<string>#e2e2e9</string>
+				<string>#2b2b2b</string>
 				<key>lineHighlight</key>
 				<string>#5E7A8C0D</string>
 				<key>selection</key>
-				<string>#e2e2e9</string>
+				<string>#2b2b2b</string>
 				<key>selectionBorder</key>
-				<string>#bbbbb5</string>
+				<string>#525252</string>
 				<key>shadow</key>
-				<string>#d5d5d8</string>
+				<string>#383838</string>
 				<key>shadowWidth</key>
 				<string>4</string>
 				<key>stackGuide</key>
-				<string>#bbbbb5</string>
+				<string>#525252</string>
 				<key>tagsForeground</key>
 				<string>#797979</string>
 				<key>tagsOptions</key>
@@ -70,7 +70,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#c8c8c6</string>
+				<string>#454545</string>
 			</dict>
 		</dict>
 		<dict>
@@ -88,7 +88,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#f27900</string>
+				<string>#bf5e02</string>
 			</dict>
 		</dict>
 		<dict>
@@ -178,7 +178,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#f27900</string>
+				<string>#bf5e02</string>
 			</dict>
 		</dict>
 		<dict>
@@ -269,7 +269,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#a1a1a3</string>
+				<string>#6d6d6d</string>
 			</dict>
 		</dict>
 		<dict>
@@ -280,7 +280,7 @@
 				<key>fontStyle</key>
 				<string>bold</string>
 				<key>foreground</key>
-				<string>#6d6d6d</string>
+				<string>#a1a1a3</string>
 			</dict>
 		</dict>
 		<dict>
