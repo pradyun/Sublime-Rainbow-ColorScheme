@@ -1,0 +1,162 @@
+@name "Rainbow (Dark)";
+
+// Background and Foreground Colors
+$color-bg: #1E1E1E;  // 11.75%
+$color-1:  #383838;  // 22.03%
+$color-2:  #525252;  // 32.31%
+$color-3:  #6D6D6D;  // 42.59%
+$color-fg: #797979;  // 47.45%
+$color-03: #A1A1A3;  // 63.16%
+$color-02: #BBBBB5;  // 73.44%
+$color-01: #D5D5D8;  // 83.72%
+
+
+// Rainbow Colors
+$color-V: #9859DE;  // Violet
+// Indigo (Can't fit both versions of the scheme, Dark by definition)
+$color-B: #0E7EC6;  // Blue
+$color-G: #058D05;  // Green
+$color-Y: #7D7D17;  // Yellow
+$color-O: #BF5E02;  // 0range
+$color-R: #D14B4B;  // Red
+
+// More Colors
+$color-Cyan: #348581;  // Cyan
+$color-Purple: #D21AD2;  // Purple
+
+//////////////////////////////////////////////////////////////////////////////////////////
+* {
+    foreground: $color-fg;
+    background: $color-bg;
+
+    caret: $color-01;
+
+    gutter: mix($color-fg, $color-bg, 10%);
+    gutterForeground: $color-3;
+
+    guide: mix($color-1, $color-bg);
+    activeGuide: $color-1;
+    stackGuide: $color-2;
+
+    selection: mix($color-1, $color-bg);
+    selectionBorder: $color-2;
+    inactiveSelection: mix($color-1, $color-bg);
+
+    lineHighlight: transparentize(mix($color-fg, $color-B, 75%), 0.95);
+
+    shadow: $color-1;
+    shadowWidth: 4;
+
+    @each $pre in bracketContents, brackets, tags {
+        #{$pre}Foreground: $color-fg;
+        #{$pre}Options:    underline;
+    }
+}
+
+invalid {
+    fontStyle: none;
+    foreground: mix($color-R, $color-fg, 75%);
+    background: transparentize($color-R, 0.7);
+}
+
+comment, punctuation.definition.comment {
+    foreground: mix($color-1, $color-2);
+}
+
+string {
+    foreground: $color-G;
+}
+
+keyword {
+    foreground: $color-O;
+}
+
+variable {
+    foreground: mix($color-Cyan, $color-V);
+} variable.parameter {
+    foreground: $color-Y;
+    // foreground: $color-Cyan;
+}
+// Because JS syntax messes with variables in a way I don't like.
+source.js variable.other {
+    foreground: $color-fg;
+}
+
+constant, support.constant {
+    foreground: mix($color-V, $color-R, 66%);
+} constant.numeric {
+    foreground: mix($color-V, $color-R, 33%);
+}
+
+storage {
+    foreground: $color-R;
+}
+
+entity.name {
+    foreground: $color-B;
+} entity.name.function {
+    foreground: mix($color-B, $color-Cyan);
+} entity.name.tag {
+    foreground: $color-R;
+} entity.other.attribute-name {
+    foreground: $color-O;
+} entity.other.inherited-class {
+    foreground: mix($color-Y, $color-Cyan);
+}
+
+support {
+    foreground: $color-Cyan;
+} support.function {
+    foreground: mix($color-Cyan, $color-B, 25%);
+}
+
+// Diff
+markup.deleted {
+    foreground: $color-R;
+    background: transparentize($color-R, 0.95);
+}
+markup.inserted {
+    foreground: $color-G;
+    background: transparentize($color-G, 0.95);
+}
+markup.changed {
+    foreground: $color-V;
+    background: transparentize($color-V, 0.95);
+}
+markup.ignored {
+    foreground: $color-B;
+    background: transparentize($color-B, 0.95);
+}
+markup.untracked {
+    foreground: $color-Y;
+    background: transparentize($color-Y, 0.95);
+}
+
+source.diff {
+    foreground: $color-3;
+    meta.diff.header {
+        fontStyle: bold;
+        foreground: $color-03;
+    }
+    meta.diff.range {
+        fontStyle: bold;
+        foreground: mix($color-V, $color-fg);
+    }
+}
+
+//// Common ///////////////////////////////////////////////////////////////////
+// Pylinter
+pylinter {
+    foreground: #FFFFFF;
+}
+
+// Anaconda
+anaconda.outline {
+    foreground: #FFFFFF;
+} anaconda.outline.illegal {
+    foreground: #CC3333;
+} anaconda.outline.violation {
+    foreground: #ED5F21;
+} anaconda.outline.warning {
+    foreground: #FFCC00;
+}
