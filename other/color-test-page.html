@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Color Test Page</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="color-test-page.css">
+    <!-- Bootstrap -->
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="tinycolor.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default text-center navbar-fixed-top">
+        <div class="container">
+            <a class="navbar-brand">Color Test Page</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-center">Input</h2>
+                <form class="well form-horizontal">
+                    <div class="form-group">
+                        <label class="col-xs-3 col-md-2 control-label">Light Background</label>
+                        <div class="col-xs-9 col-md-10">
+                            <div class="input-group">
+                                <span class="input-group-addon" id="input-addon-light"></span>
+                                <input class="form-control" id="color-light-input" type="color" value="#FFFFFF">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-xs-3 col-md-2 control-label">Dark Background</label>
+                        <div class="col-xs-9 col-md-10">
+                            <div class="input-group">
+                                <span class="input-group-addon" id="input-addon-dark"></span>
+                                <input class="form-control" id="color-dark-input" type="color" value="#000000">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-xs-3 col-md-2 control-label">Foreground</label>
+                        <div class="col-xs-9 col-md-10">
+                            <div class="input-group">
+                                <span class="input-group-addon" id="input-addon-foreground"></span>
+                                <input class="form-control" id="color-foreground-input" type="color" value="#808080">
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="form-group">
+                        <label class="col-xs-2 control-label">Range</label>
+                        <div class="col-xs-2">
+                            <input class="form-control" id="suggestions-range" type="number" value="0.1" step="0.01" min="0.0" max="1.0">
+                        </div>
+                        <label class="col-xs-2 control-label">Gap</label>
+                        <div class="col-xs-2">
+                            <input class="form-control" id="suggestions-gap" type="number" value="0.008" step="0.001" min="0.0">
+                        </div>
+                        <label class="col-xs-2 control-label">Threshold</label>
+                        <div class="col-xs-2">
+                            <input class="form-control" id="suggestions-threshold" type="number" value="3.5" step="0.1" min="1.0">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-xs-4 col-md-3 control-label">Check Contrast with Light</label>
+                        <div class="col-xs-2 col-md-3">
+                            <input class="form-control" id="suggestions-check-light" type="checkbox">
+                        </div>
+                        <label class="col-xs-4 col-md-3 control-label">Check Contrast with Dark</label>
+                        <div class="col-xs-2 col-md-3">
+                            <input class="form-control" id="suggestions-check-dark" type="checkbox">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-center">Previews</h2>
+                <div class="well">
+                    <div class="container-fluid">
+                        <div class="col-md-6">
+                            <h3 class="text-center">Light</h3>
+                            <div id="preview-box-light" class="preview-box">
+                                Lorem <b>ipsum</b> dolor sit <i>amet</i>, consectetur <i>adipisicing</i> elit. <br>
+                                Lorem ipsum <b>dolor</b> sit <i>amet</i>, consectetur <i>adipisicing</i> elit. <br>
+                                Lorem ipsum dolor <b>sit</b> <i>amet</i>, consectetur <i>adipisicing</i> elit. <br>
+                                Lorem ipsum dolor sit <b><i>amet</i></b>, consectetur <i>adipisicing</i> elit. <br>
+                            </div>
+                            <div id="information-box-light" class="information-box">
+                                <div class="info-row">
+                                    <span class="info-label">Contrast Ratio</span>
+                                    <span class="info-value contrast-ratio">
+                                    </span>
+                                </div>
+                                <div class="info-row">
+                                    <span class="info-label">Is colour readable?</span>
+                                    <span class="info-value is-readable"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="text-center">Dark</h3>
+                            <div id="preview-box-dark" class="preview-box">
+                                Lorem <b>ipsum</b> dolor sit <i>amet</i>, consectetur <i>adipisicing</i> elit. <br>
+                                Lorem ipsum <b>dolor</b> sit <i>amet</i>, consectetur <i>adipisicing</i> elit. <br>
+                                Lorem ipsum dolor <b>sit</b> <i>amet</i>, consectetur <i>adipisicing</i> elit. <br>
+                                Lorem ipsum dolor sit <b><i>amet</i></b>, consectetur <i>adipisicing</i> elit. <br>
+                            </div>
+                            <div id="information-box-dark" class="information-box">
+                                <div class="info-row">
+                                    <span class="info-label">Contrast Ratio</span>
+                                    <span class="info-value contrast-ratio"></span>
+                                </div>
+                                <div class="info-row">
+                                    <span class="info-label">Is colour readable?</span>
+                                    <span class="info-value is-readable"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div id="info-label">
+                    <h2 class="text-center">Suggested Colors</h2>
+                </div>
+                <div id="color-suuggestions-holder" class="well well-lg">
+                    <div class="container-fluid">
+                        <div id="color-suggestions" class="text-center">
+                            (not-loaded)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="color-test-page.js"></script>
+</body>
+
+</html>
