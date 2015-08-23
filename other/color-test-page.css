@@ -1,0 +1,84 @@
+/* Resets */
+body > .container {
+    padding-top: 70px;
+}
+
+h1, h2 {
+    border-bottom: 1px solid #D0D0D0;
+}
+h1 {
+    padding-bottom: 5px;
+}
+h2 {
+    padding-bottom: 4px;
+}
+.well h3 {
+    margin-top: 0;
+}
+.navbar-brand {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.form-control[type="color"] {
+    padding: 0;
+}
+
+/* Styling */
+.input-group-addon {
+    font-family: monospace;
+}
+
+.preview-box {
+    text-align: center;
+    font-family: "PragmataPro", monospace;
+    width: 100%;
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+    margin-bottom: 7px;
+    padding: 7px;
+}
+
+.color-box {
+    border-radius: 5px;
+    border: 1px solid #E0E0E0;
+    padding: 10px;
+}
+
+.color-hex, .color-hsv {
+    display: block;
+}
+.color-hex {
+    font-weight: bold;
+}
+.color-hex:hover {
+    cursor: pointer;
+}
+
+.color-contrast-dark, .color-contrast-light {
+    display: inline-block;
+}
+.color-contrast-light {
+    float: left;
+    margin-left: 10%;
+}
+.color-contrast-dark {
+    float: right;
+    margin-right: 10%;
+}
+
+.info-label, .info-value {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+}
+
+.info-label {
+    font-weight: bold;
+}
+
+.info-value {
+    float: right;
+    font-family: monospace;
+}
